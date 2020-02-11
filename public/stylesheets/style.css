@@ -1,0 +1,53 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+
+a {
+  color: #00B7FF;
+}
+i {
+  padding-top: 120px;
+  font-size: 24px;
+}
+.calendar-outer {
+  display: inline-flex;
+}
+.calendar-inner {
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.monthYear {
+  font-weight: bold;
+  font-size: x-large;
+}
+ul {
+  margin: 0;
+  vertical-align: top;
+}
+ul.weekdays {
+  display: block;
+  padding-inline-start: 0;
+  border-bottom: 1px solid lightgrey;
+}
+ul.weekdays li {
+  display: inline-block;
+  width: 52px;
+  font-weight: bold;
+  padding-left: 0;
+}
+div.days li {
+  display: block;
+  width: 20px;
+  height: 40px;
+}
+div.days ul {
+  display: inline-block;
+  padding: 16px;
+}
+.red {
+  color: red;
+}

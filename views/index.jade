@@ -1,0 +1,50 @@
+extends layout
+
+block content
+  div(class='calendar')
+    p(class='monthYear') #{monthName} #{year}
+    div(class='calendar-outer')
+      a(href='/#{nav.prev.year}/#{nav.prev.month}')
+        i(class='fas fa-chevron-circle-left')
+      div(class='calendar-inner')
+        ul(class='weekdays')
+          li(class='red')
+            p S
+          li
+            p M
+          li
+            p T
+          li
+            p W
+          li
+            p T
+          li
+            p F
+          li(class='red')
+            p S
+
+
+        div(class='days')
+          ul(class='red')
+            each val, index in calendarDays[0]
+              li= val
+          ul(class='')
+            each val, index in calendarDays[1]
+              li= val
+          ul(class='')
+            each val, index in calendarDays[2]
+              li= val
+          ul(class='')
+            each val, index in calendarDays[3]
+              li= val
+          ul(class='')
+            each val, index in calendarDays[4]
+              li= val
+          ul(class='')
+            each val, index in calendarDays[5]
+              li= val
+          ul(class='red')
+            each val, index in calendarDays[6]
+              li= val
+      a(href='/#{nav.next.year}/#{nav.next.month}')
+        i(class='fas fa-chevron-circle-right')
